@@ -1,0 +1,40 @@
+.home-page {
+
+  text-align: center;
+  color: azure;
+}
+
+.home-page .inst {
+  width: fit-content;
+  background-color: #1010106b;
+  margin: 1% auto;
+  padding: 1%;
+  border-radius: 9px;
+}
+
+.home-page form {
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  background-color: #252525;
+  box-shadow: inset 0px 0px 5px 1px cadetblue;
+}
+
+.name,
+.gender,
+.action {
+  margin: .6rem;
+  direction: ltr;
+}
+
+.gender-m,
+.gender-f {
+  cursor: pointer;
+  text-align: left;
+}
+
+.home-page .gender {
+  display: flex;
+  justify-content: center;
+}

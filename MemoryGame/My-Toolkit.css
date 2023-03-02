@@ -1,0 +1,60 @@
+.m-body {
+  background-color: #000c;
+  font-family: cursive;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.m-nav {
+  position: relative;
+
+  background-color: rgb(0, 4, 34, 50%);
+  display: flex;
+  justify-content: center;
+}
+
+.m-nav-ul {
+  list-style: none;
+}
+
+.m-ul {
+  list-style: none;
+}
+
+.m-nav-ul li {
+  margin: 0px .3rem;
+  padding: 0px;
+  display: inline;
+}
+
+.m-btn {
+  border: 1px solid cadetblue;
+  background-color: transparent;
+  font-style: normal;
+  font-size: x-large;
+  cursor: pointer;
+  color: cadetblue;
+}
+
+.m-btn:hover {
+  background-color: cadetblue;
+  color: black;
+}
+
+
+.m-input {
+  border: none;
+  padding: 1.5%;
+  border-radius: 5px;
+}
+
+.m-input:active,
+.m-input:focus,
+.m-input:hover {
+  outline: none;
+  border: none;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game Mission</title>
+    <!-- <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="./home-styling.css" />
+    <link rel="stylesheet" href="./game-styling.css" />
+    <link rel="stylesheet" href="./My-Toolkit.css" />
+  </head>
+  <body class="m-body">
+    <nav class="m-nav">
+      <ul class="m-nav-ul">
+        <li><button id="home-btn" class="m-btn">Home</button></li>
+        <li><button id="game-btn" class="m-btn">Game</button></li>
+      </ul>
+    </nav>
+
+    <div class="home-page" id="home">
+      <h1 style="text-shadow: 2px 4px 4px black">Welcome to home page</h1>
+
+      <form id="formId">
+        <div class="name">
+          <label for="enterd-name">Your Name</label>
+          <input id="enterd-name" class="m-input" />
+        </div>
+        <div class="gender">
+          <ul class="m-ul">
+            <li>
+              <div class="gender-m">
+                <input id="male" type="radio" name="gender" />
+                <label for="male">Male</label>
+              </div>
+            </li>
+            <li>
+              <div class="gender-f">
+                <input id="female" type="radio" name="gender" />
+                <label for="female">Female</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="action">
+          <button type="submit" class="m-btn submit">Submit</button>
+        </div>
+      </form>
+      <div class="inst">
+        <h4 style="margin: 0.5%">game instructions</h4>
+        <div>
+          <ul class="m-ul">
+            <li>
+              <p>
+                images are (130*130)px, so its highly recommended to play the
+                game in a wide screen.
+              </p>
+            </li>
+            <li>
+              <p>
+                The tries is not limited but its better to not excced 10 tries.
+              </p>
+            </li>
+            <li>
+              <p>You must have internet connection to fetch the imgs.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="game" class="hide">
+      <div class="game-head">
+        <div class="p-name">Hello <span id="player-name"></span></div>
+        <div class="p-tries">Tries: <span>0</span></div>
+      </div>
+      <div class="start">
+        <button id="start-btn" class="m-btn start-btn">Start the Game</button>
+      </div>
+      <div id="game-blocks" class="game-blocks"></div>
+    </div>
+
+    <script src="./Form&logic.js" />
+  </body>
+</html>
